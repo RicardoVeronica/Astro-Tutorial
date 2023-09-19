@@ -1,17 +1,14 @@
 ---
+layout: ../../layouts/MarkdownPost.astro
 title: 'My first blog post'
 pubDate: 07-09-2023
 description: 'This is the first post of my new Astro Blog'
 author: 'Ricardo Veronica Duran'
 image:
-    url: 'https://docs.astro.build/assets/full-logo-light.png'
+    url: 'https://docs.astro.build/assets/full-logo-dark.png'
     alt: 'The full Astro logo'
 tags: ["astro", "blogging"]
 ---
-# My First Blog Post
-
-Published on: 07-09-2023
-
 Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.
 
 ## What I have accomplished
