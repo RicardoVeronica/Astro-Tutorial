@@ -1,15 +1,16 @@
 ---
+import Base from "./Base.astro";
 const { frontmatter } = Astro.props;
 ---
 
-<h1>{frontmatter.title}</h1>
+<Base pageTitle={frontmatter.title}>
+    <h2>Written by {frontmatter.author}</h2>
 
-<h2>Written by {frontmatter.author}</h2>
+    <h3>Published on: {frontmatter.pubDate}</h3>
 
-<h3>Published on: {frontmatter.pubDate}</h3>
+    <p><em>{frontmatter.description}</em></p>
 
-<p><em>{frontmatter.description}</em></p>
+    <img src={frontmatter.image.url} alt={frontmatter.image.alt} width="300" />
 
-<img src={frontmatter.image.url} alt={frontmatter.image.alt} width="300" />
-
-<slot />
+    <slot />
+</Base>
